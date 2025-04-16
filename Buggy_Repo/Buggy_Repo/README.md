@@ -48,8 +48,8 @@
 | 13  | items.py: delete_item uses ObjectId without validating if item_id and item_details are valid ObjectId strings.                                        | Maithily              | Maithily             |
 | 14  | items.py: delete_item attempts to delete two items but only checks the result of the first deletion, leading to potential logical errors.                                         | Maithily               | Maithily             |
 | 15  | items.py: Missing import for Item model validation, which may cause runtime errors if Item is not properly defined.                                         | Maithily              | Maithily             |
-| 16  |                                          |               |              |
-| 17  |                                          |               |              |
+| 16  | Models.py:Edit 1:Item class inherits from BaseModel | Kimaya            | Kimaya           |
+| 17  | Models.py:Edit 2: Name type should be str|Kimaya             |   Kimaya           |
 | 18  |                                          |               |              |
 | 19  |                                          |               |              |
 | 20  |                                          |               |              |
