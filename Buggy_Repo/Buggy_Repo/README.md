@@ -35,7 +35,7 @@
 | 1   | Style.css is not filled                                    |         arya |     arya     |
 | 2   | quiz.py: changed to return a random question | Chandrani   | Chandrani       |
 | 3   | quiz.py: changed method for /answer from get to post    | Chandrani        | Chandrani             |
-| 4   | Users.py: Edit 1: Changed POST to GET    | Kimaya        |  Kimaya      |
+| 4   | Users.py: Edit 1: Changed POST to GE        |  Kimaya      |
 | 5   | Users.py: Edit 2: delete_all() to delete_one()| Kimaya   |  Kimaya      |
 | 4   | analytics.py: Inefficient import: `init_db` was imported inside function                        | Mehrish       | Mehrish      |
 | 5   | analytics.py: Dummy data used in users list (e.g., `["A1", "B2", "C3"]`)                         | Mehrish       | Mehrish      |
@@ -62,3 +62,5 @@
 | 28  | Added gameOver Check in loadQuestion Function                                     |        Chandrani       |      Chandrani        |
 | 29  |     Added Error Handling for Missing Answer and Invalid ID                                     |      Chandrani         |  Chandrani            |
 | 30  |    Reset Button and Game State Management                                      |   Chandrani            |    Chandrani          |
+| 31  | items.html: Added dynamic item count element and JS interaction for item count	|Mehrish |Mehrish|
+| 32	|items.html: Corrected <ul> ID from 'items-list' to 'itemList' as per JS reference	|Mehrish |Mehrish|
