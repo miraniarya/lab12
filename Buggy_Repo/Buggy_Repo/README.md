@@ -26,7 +26,11 @@
 
 ### Add the names of the members and roll numbers of your team below
 
-- Name : Roll Number
+- Arya Mirani : 2024101145
+- Chandrani Saha : 2024113002
+- Mehrish Khan : 2024111014
+- Maithily Bhala : 2024117011
+- Kimaya Kashyap : 2024115001
 
 ### Table to keep track
 
