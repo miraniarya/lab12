@@ -1,2 +1,162 @@
-Aah I was too lazy to implement this
-You can do it
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding: 1rem;
+  }
+  
+  /* Container with card style */
+  .container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(145deg, #1a1a1a, #121212);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.08);
+    border: 1px solid #2a2a2a;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #161616;
+    padding: 1rem;
+    border-bottom: 1px solid #2a2a2a;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  nav a {
+    color: #00ffe7;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff007a;
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00ffe7;
+  }
+  
+  /* Paragraphs */
+  p {
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Buttons */
+  button {
+    background: linear-gradient(to right, #00ffe7, #00b3a4);
+    color: #000;
+    padding: 0.6rem 1.4rem;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    box-shadow: 0 0 10px rgba(0, 255, 200, 0.3);
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #ff007a, #ff4dc4);
+    transform: translateY(-2px);
+  }
+  
+  /* Text Inputs, Selects */
+  input[type="text"],
+  select {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #333;
+    border-radius: 12px;
+    background-color: #1e1e1e;
+    color: #fff;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: #00ffe7;
+    box-shadow: 0 0 5px rgba(0, 255, 231, 0.5);
+  }
+  
+  /* List Items */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #1c1c1c;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
+    box-shadow: 0 0 8px rgba(0, 255, 231, 0.05);
+  }
+  
+  /* Scrollable content areas */
+  .news-scrollable,
+  .attempt-scrollable {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #121212;
+    margin-top: 1rem;
+  }
+  
+  /* Stats area */
+  #stats p {
+    font-size: 1.1rem;
+    margin: 0.4rem 0;
+  }
+  
+  /* Images (Analytics plot) */
+  #plot {
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #00ffe7;
+  }
+  
+  /* Hidden utility */
+  .hidden {
+    display: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .container {
+      padding: 1.2rem;
+    }
+  
+    input[type="text"],
+    select {
+      width: 100%;
+    }
+  }
+  
