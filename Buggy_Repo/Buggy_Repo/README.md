@@ -37,11 +37,12 @@
 | 3   | quiz.py: changed method for /answer from get to post    | Chandrani        | Chandrani             |
 | 4   | Users.py: Edit 1: Changed POST to GET    | Kimaya        |  Kimaya      |
 | 5   | Users.py: Edit 2: delete_all() to delete_one()| Kimaya   |  Kimaya      |
-| 6   |                                          |               |              |
-| 7   |                                          |               |              |
-| 8   |                                          |               |              |
-| 9   |                                          |               |              |
-| 10  |                                          |               |              |
+| 4   | analytics.py: Inefficient import: `init_db` was imported inside function                        | Mehrish       | Mehrish      |
+| 5   | analytics.py: Dummy data used in users list (e.g., `["A1", "B2", "C3"]`)                         | Mehrish       | Mehrish      |
+| 6   | analytics.py: No error handling for database fetch                                               | Mehrish       | Mehrish      |
+| 7   | analytics.py: Unsafe dict access for `["names"]` and `["usernames"]` – could throw KeyError      | Mehrish       | Mehrish      |
+| 8   | analytics.py: Unnecessary histogram generation in API logic                                      | Mehrish       | Mehrish      |
+| 9   | analytics.py: Cleaned and simplified `stats` response for frontend use                           | Mehrish       | Mehrish      |
 | 11  |                                          |               |              |
 | 12  |                                          |               |              |
 | 13  |                                          |               |              |
