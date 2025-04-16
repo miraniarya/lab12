@@ -54,10 +54,10 @@
 | 20  |  news.js - changed the code so that the searching and sortign works      |        arya       |     arya         |
 | 21  | quiz.py: changed to make sure question is not repeated                                            |  Chandrani           | Chandrani             |
 | 22  | profile.html - added quiz.html                                         |         arya      |       arya       |
-| 23  |                                          |               |              |
-| 24  |                                          |               |              |
-| 25  |                                          |               |              |
-| 26  |                                          |               |              |
+| 23  | items.html- edit 1:Added missing container to hold all item content                                         |    Kimaya           |      Kimaya        |
+| 24  | items.html- edit 2:Added form with id 'itemForm' for adding new items |  Kimaya             | Kimaya             |
+| 25  | items.html- edit 3:Added search input                                        | Kimaya              |  Kimaya            |
+| 26  | items.html- edit 4:Added item count and list container                                       |     Kimaya          |  Kimaya            |
 | 27  |                                          |               |              |
 | 28  |                                          |               |              |
 | 29  |                                          |               |              |
