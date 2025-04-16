@@ -50,7 +50,7 @@
 | 15  | items.py: Missing import for Item model validation, which may cause runtime errors if Item is not properly defined.                                         | Maithily              | Maithily             |
 | 16  | Models.py:Edit 1:Item class inherits from BaseModel | Kimaya            | Kimaya           |
 | 17  | Models.py:Edit 2: Name type should be str|Kimaya             |   Kimaya           |
-| 18  |                                          |               |              |
+| 18  | quiz.py: using Request and await json | Chandrani            | Chandrani             |
 | 19  |                                          |               |              |
 | 20  |                                          |               |              |
 | 21  |                                          |               |              |
