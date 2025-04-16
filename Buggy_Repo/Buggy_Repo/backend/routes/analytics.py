@@ -7,9 +7,14 @@ import base64
 
 router = APIRouter()
 
-async def get_items_collection():
-    from db import init_db
-    return init_db()["items_collection"]
+# Old code: The function `get_items_collection` was fetching the database collection for items.
+# However, it imported `init_db` inside the function, which is not efficient.
+# async def get_items_collection():
+#     from db import init_db
+#     return init_db()["items_collection"]
+
+# New code: Import `init_db` at the top of the file to avoid repeated imports and improve efficiency.
+from db import init_db
 
 async def get_users_collection():
     from db import init_db
