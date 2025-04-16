@@ -1,7 +1,8 @@
+#Kimaya checked this file 2 Edits
 from pydantic import BaseModel
 
-class Item():
-    name: int
+class Item(BaseModel):#Edit 1: Item class inherits from BaseModel
+    name: str #Edit 2: Name type should be str
     description: str
 
 class User(BaseModel):
