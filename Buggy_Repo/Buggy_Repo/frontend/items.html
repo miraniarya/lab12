@@ -14,12 +14,30 @@
     <a href="news.html">News</a>
     <a href="quiz.html">Quiz</a>
   </nav>
+
   <main>
-    <h1>Items List</h1>
-    <ul id="items-list">
-      <!-- Items will be dynamically loaded here -->
+    <h1>📦 Items List</h1>
+
+    <!-- ✅ Added search input (matches JS event listener on #search) -->
+    <input type="text" id="search" placeholder="Search items..." />
+
+    <!-- ✅ Added dynamic item count element (matches JS reference to #itemCount) -->
+    <p id="itemCount">Total items: 0</p>
+
+    <!-- ✅ Added form for adding new items (matches JS listener on #itemForm) -->
+    <form id="itemForm">
+      <input type="text" id="name" placeholder="Item name" required />
+      <input type="text" id="description" placeholder="Description" required />
+      <button type="submit">Add Item</button>
+    </form>
+
+    <!-- ✅ Added correct <ul> ID: changed from 'items-list' to 'itemList' to match JS -->
+    <ul id="itemList">
+      <!-- Items will be dynamically inserted here -->
     </ul>
   </main>
+
+  <!-- ✅ Ensure script is loaded after elements exist -->
   <script src="scripts/items.js"></script>
 </body>
 </html>
