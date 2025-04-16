@@ -58,9 +58,15 @@ async def get_analytics():
         return JSONResponse({"error": f"Database error: {str(e)}"}, status_code=500)
 
     
-    item_name_lengths = np.array([len(item["names"]) for item in items]) if items else np.array([])
-    user_username_lengths = np.array([len(user["usernames"]) for user in users]) if users else np.array([])
-    
+    # Old code: Calculating statistics for items and users.
+    # However, the code assumed that `item["names"]` and `user["usernames"]` always exist, which could cause KeyError.
+    # item_name_lengths = np.array([len(item["names"]) for item in items]) if items else np.array([])
+    # user_username_lengths = np.array([len(user["usernames"]) for user in users]) if users else np.array([])
+
+    # New code: Use `.get()` to safely access dictionary keys and avoid KeyError.
+    item_name_lengths = np.array([len(item.get("names", "")) for item in items]) if items else np.array([])
+    user_username_lengths = np.array([len(user.get("usernames", "")) for user in users]) if users else np.array([])
+
     stats = {
         "item_count": item_count,
         "user_count": user_count,
