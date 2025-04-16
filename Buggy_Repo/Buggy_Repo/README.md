@@ -58,7 +58,7 @@
 | 24  | items.html- edit 2:Added form with id 'itemForm' for adding new items |  Kimaya             | Kimaya             |
 | 25  | items.html- edit 3:Added search input                                        | Kimaya              |  Kimaya            |
 | 26  | items.html- edit 4:Added item count and list container                                       |     Kimaya          |  Kimaya            |
-| 27  |                                          |               |              |
+| 27  |  added the menu bar in all 6 of the html pages                                      |       arya        |     arya         |
 | 28  |                                          |               |              |
 | 29  |                                          |               |              |
 | 30  |                                          |               |              |
