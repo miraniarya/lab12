@@ -43,11 +43,11 @@
 | 7   | analytics.py: Unsafe dict access for `["names"]` and `["usernames"]` – could throw KeyError      | Mehrish       | Mehrish      |
 | 8   | analytics.py: Unnecessary histogram generation in API logic                                      | Mehrish       | Mehrish      |
 | 9   | analytics.py: Cleaned and simplified `stats` response for frontend use                           | Mehrish       | Mehrish      |
-| 11  |                                          |               |              |
-| 12  |                                          |               |              |
-| 13  |                                          |               |              |
-| 14  |                                          |               |              |
-| 15  |                                          |               |              |
+| 11  | items.py: router is incorrectly defined as a dictionary ({}) instead of APIRouter().                                        | Maithily              | Maithily             |
+| 12  | items.py: Duplicate @router.post("/") decorators for create_item, causing route conflicts.                                         | Maithily               | Maithily             |
+| 13  | items.py: delete_item uses ObjectId without validating if item_id and item_details are valid ObjectId strings.                                        | Maithily              | Maithily             |
+| 14  | items.py: delete_item attempts to delete two items but only checks the result of the first deletion, leading to potential logical errors.                                         | Maithily               | Maithily             |
+| 15  | items.py: Missing import for Item model validation, which may cause runtime errors if Item is not properly defined.                                         | Maithily              | Maithily             |
 | 16  |                                          |               |              |
 | 17  |                                          |               |              |
 | 18  |                                          |               |              |
