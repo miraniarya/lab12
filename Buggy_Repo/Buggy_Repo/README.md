@@ -59,6 +59,6 @@
 | 25  | items.html- edit 3:Added search input                                        | Kimaya              |  Kimaya            |
 | 26  | items.html- edit 4:Added item count and list container                                       |     Kimaya          |  Kimaya            |
 | 27  |  added the menu bar in all 6 of the html pages                                      |       arya        |     arya         |
-| 28  |                                          |               |              |
-| 29  |                                          |               |              |
-| 30  |                                          |               |              |
+| 28  | Added gameOver Check in loadQuestion Function                                     |        Chandrani       |      Chandrani        |
+| 29  |     Added Error Handling for Missing Answer and Invalid ID                                     |      Chandrani         |  Chandrani            |
+| 30  |    Reset Button and Game State Management                                      |   Chandrani            |    Chandrani          |
