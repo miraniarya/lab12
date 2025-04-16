@@ -53,7 +53,7 @@
 | 18  | quiz.py: using Request and await json | Chandrani            | Chandrani             |
 | 19  |  index.html    - added quiz.html                   |  arya             |    arya          |
 | 20  |  news.js - changed the code so that the searching and sortign works      |        arya       |     arya         |
-| 21  |                                          |               |              |
+| 21  | quiz.py: changed to make sure question is not repeated                                            |  Chandrani           | Chandrani             |
 | 22  |                                          |               |              |
 | 23  |                                          |               |              |
 | 24  |                                          |               |              |
