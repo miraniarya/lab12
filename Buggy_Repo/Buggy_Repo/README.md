@@ -35,8 +35,8 @@
 | 1   | Style.css is not filled                                    |         Narain |     Whole Team     |
 | 2   | quiz.py: changed to return a random question | Chandrani   | Chandrani       |
 | 3   | quiz.py: changed method for /answer from get to post    | Chandrani        | Chandrani             |
-| 4   |                                          |               |              |
-| 5   |                                          |               |              |
+| 4   | Users.py: Edit 1: Changed POST to GET    | Kimaya        |  Kimaya      |
+| 5   | Users.py: Edit 2: delete_all() to delete_one()| Kimaya   |  Kimaya      |
 | 6   |                                          |               |              |
 | 7   |                                          |               |              |
 | 8   |                                          |               |              |
