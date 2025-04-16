@@ -1,9 +1,8 @@
-<!--Kimaya 4 Edits -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Items</title>
+  <title>Analytics</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,27 +12,22 @@
     <a href="profile.html">Profile</a>
     <a href="analytics.html">Analytics</a>
     <a href="news.html">News</a>
+    <a href="quiz.html">Quiz</a>
   </nav>
-
-  <!--Edit 1: Added missing container to hold all item content -->
   <div class="container">
-    <h1>Items</h1>
-
-    <!-- Edit 2: Added form with id 'itemForm' for adding new items -->
-    <form id="itemForm">
-      <input type="text" id="name" placeholder="Item name" required />
-      <input type="text" id="description" placeholder="Description" required />
-      <button type="submit">Add Item</button>
-    </form>
-
-    <!-- Edit 3: Added search input -->
-    <input type="text" id="search" placeholder="Search items..." />
-
-    <!-- Edit 4: Added item count and list container -->
-    <p id="itemCount">Total items: 0</p>
-    <ul id="itemList"></ul>
+   
+    <h1>📊 Analytics</h1>
+    <div id="stats">
+      <p>Items: <span id="itemCount">0</span></p>
+      <p>Users: <span id="userCount">0</span></p>
+      <p>Avg Item Name Length: <span id="avgItemName">0</span></p>
+      <p>Avg Username Length: <span id="avgUserName">0</span></p>
+      <p>Max Item Name Length: <span id="maxItemName">0</span></p>
+      <p>Max Username Length: <span id="maxUserName">0</span></p>
+    </div>
+    <img id="plot" src="" alt="Analytics Plot" style="max-width: 100%;" />
   </div>
 
-  <script src="scripts/items.js"></script>
+  <script src="scripts/analytics.js"></script>
 </body>
 </html>
