@@ -32,7 +32,7 @@
 
 | ID  | Issue Description                        | Identified By | Fixed By     |
 |-----|------------------------------------------|---------------|--------------|
-| 1   | Style.css is not filled                                    |         Narain |     Whole Team     |
+| 1   | Style.css is not filled                                    |         arya |     arya     |
 | 2   | quiz.py: changed to return a random question | Chandrani   | Chandrani       |
 | 3   | quiz.py: changed method for /answer from get to post    | Chandrani        | Chandrani             |
 | 4   | Users.py: Edit 1: Changed POST to GET    | Kimaya        |  Kimaya      |
@@ -51,8 +51,8 @@
 | 16  | Models.py:Edit 1:Item class inherits from BaseModel | Kimaya            | Kimaya           |
 | 17  | Models.py:Edit 2: Name type should be str|Kimaya             |   Kimaya           |
 | 18  | quiz.py: using Request and await json | Chandrani            | Chandrani             |
-| 19  |                                          |               |              |
-| 20  |                                          |               |              |
+| 19  |  index.html    - added quiz.html                   |  arya             |    arya          |
+| 20  |  news.js - changed the code so that the searching and sortign works      |        arya       |     arya         |
 | 21  |                                          |               |              |
 | 22  |                                          |               |              |
 | 23  |                                          |               |              |
