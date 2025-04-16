@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Analytics</title>
+  <title>Items</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,20 +14,12 @@
     <a href="news.html">News</a>
     <a href="quiz.html">Quiz</a>
   </nav>
-  <div class="container">
-   
-    <h1>📊 Analytics</h1>
-    <div id="stats">
-      <p>Items: <span id="itemCount">0</span></p>
-      <p>Users: <span id="userCount">0</span></p>
-      <p>Avg Item Name Length: <span id="avgItemName">0</span></p>
-      <p>Avg Username Length: <span id="avgUserName">0</span></p>
-      <p>Max Item Name Length: <span id="maxItemName">0</span></p>
-      <p>Max Username Length: <span id="maxUserName">0</span></p>
-    </div>
-    <img id="plot" src="" alt="Analytics Plot" style="max-width: 100%;" />
-  </div>
-
-  <script src="scripts/analytics.js"></script>
+  <main>
+    <h1>Items List</h1>
+    <ul id="items-list">
+      <!-- Items will be dynamically loaded here -->
+    </ul>
+  </main>
+  <script src="scripts/items.js"></script>
 </body>
 </html>
