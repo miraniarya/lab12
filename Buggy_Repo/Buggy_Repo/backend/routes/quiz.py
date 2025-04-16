@@ -1,4 +1,5 @@
-from fastapi import APIRouter
+#chandrani editing this file     
+from fastapi import APIRouter, Request  # Added Request for handling JSON body in POST
 import random
 
 router = APIRouter(tags=["quiz"])
@@ -41,15 +42,17 @@ game_state = {"high_score": 0}
 # god would hate me for not dockerizing this repo
 @router.get("/question")
 async def get_question():
-    question = questions[1]
+    question = random.choice(questions)  # FIXED: return a random question instead of static
     return {
         "id": question["id"],
         "text": question["text"],
         "options": question["options"]
     }
 
-@router.get("/answer")
-async def submit_answer(data: dict):
+# FIXED: changed GET to POST and added request parsing
+@router.post("/answer")
+async def submit_answer(request: Request):  # Use Request to parse incoming POST body
+    data = await request.json()  # Properly extract JSON payload
     question_id = data.get("id")
     answer = data.get("answer")
     score = data.get("score", 0)
