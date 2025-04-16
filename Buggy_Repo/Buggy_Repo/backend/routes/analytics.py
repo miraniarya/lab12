@@ -16,8 +16,16 @@ router = APIRouter()
 # New code: Import `init_db` at the top of the file to avoid repeated imports and improve efficiency.
 from db import init_db
 
+async def get_items_collection():
+    return init_db()["items_collection"]
+
+# Old code: The function `get_users_collection` had the same issue as `get_items_collection`.
+# async def get_users_collection():
+#     from db import init_db
+#     return init_db()["users_collection"]
+
+# New code: Same fix as above for `get_users_collection`.
 async def get_users_collection():
-    from db import init_db
     return init_db()["users_collection"]
 
 @router.get("/")
