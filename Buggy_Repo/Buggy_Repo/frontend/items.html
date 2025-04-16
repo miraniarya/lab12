@@ -1,3 +1,4 @@
+#Kimaya 4 Edits 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,25 @@
     <a href="analytics.html">Analytics</a>
     <a href="news.html">News</a>
   </nav>
-  <!-- fuck I think I deleted a container, god help me-->
+
+  <!--Edit 1: Added missing container to hold all item content -->
+  <div class="container">
+    <h1>Items</h1>
+
+    <!-- Edit 2: Added form with id 'itemForm' for adding new items -->
+    <form id="itemForm">
+      <input type="text" id="name" placeholder="Item name" required />
+      <input type="text" id="description" placeholder="Description" required />
+      <button type="submit">Add Item</button>
+    </form>
+
+    <!-- Edit 3: Added search input -->
+    <input type="text" id="search" placeholder="Search items..." />
+
+    <!-- Edit 4: Added item count and list container -->
+    <p id="itemCount">Total items: 0</p>
+    <ul id="itemList"></ul>
+  </div>
 
   <script src="scripts/items.js"></script>
 </body>
