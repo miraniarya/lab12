@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Analytics</title>
+  <title>Profiles</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,19 +15,19 @@
     <a href="quiz.html">Quiz</a>
   </nav>
   <div class="container">
-   
-    <h1>📊 Analytics</h1>
-    <div id="stats">
-      <p>Items: <span id="itemCount">0</span></p>
-      <p>Users: <span id="userCount">0</span></p>
-      <p>Avg Item Name Length: <span id="avgItemName">0</span></p>
-      <p>Avg Username Length: <span id="avgUserName">0</span></p>
-      <p>Max Item Name Length: <span id="maxItemName">0</span></p>
-      <p>Max Username Length: <span id="maxUserName">0</span></p>
-    </div>
-    <img id="plot" src="" alt="Analytics Plot" style="max-width: 100%;" />
+    <!-- Please suggest some good music, I am tired of my playlist -->
+    <p id="userCounts">Total users: 0</p>
+    <input type="text" id="search" placeholder="Search users..." />
+    <h1>🧑 User Profiles</h1>
+    <form id="userForm">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="text" id="bio" placeholder="Bio" required />
+      <button type="submit">Add User</button>
+    </form>
+    <ul id="userList"></ul>
   </div>
 
-  <script src="scripts/analytics.js"></script>
+  <!-- the below script should be scripts/ and not styles/ -->
+  <script src="scripts/profile.js"></script>
 </body>
 </html>
