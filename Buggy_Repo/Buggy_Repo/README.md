@@ -33,8 +33,8 @@
 | ID  | Issue Description                        | Identified By | Fixed By     |
 |-----|------------------------------------------|---------------|--------------|
 | 1   | Style.css is not filled                                    |         Narain |     Whole Team     |
-| 2   |                                          |               |              |
-| 3   |                                          |               |              |
+| 2   | quiz.py: changed to return a random question | Chandrani   | Chandrani       |
+| 3   | quiz.py: changed method for /answer from get to post    | Chandrani        | Chandrani             |
 | 4   |                                          |               |              |
 | 5   |                                          |               |              |
 | 6   |                                          |               |              |
