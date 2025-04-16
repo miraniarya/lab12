@@ -1,3 +1,4 @@
+const baseURL = ""; // Fixed: added missing baseURL
 
 async function loadUsers() {
   const res = await fetch(`/users`);
@@ -40,7 +41,7 @@ document.getElementById("search").addEventListener("input", async (e) => {
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
     deleteBtn.onclick = async () => {
-      await fetch(`/users/${user._id}`, { method: "PATCH" });
+      await fetch(`/users/${user._id}`, { method: "DELETE" });  //  Fixed method from PATCH to DELETE
       loadUsers();
     };
 
