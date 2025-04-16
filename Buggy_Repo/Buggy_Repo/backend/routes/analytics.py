@@ -30,21 +30,33 @@ async def get_users_collection():
 
 @router.get("/")
 async def get_analytics():
-    
-    items_collection = await get_items_collection()
-    users_collection = await get_users_collection()
-    
-    
-    items = []
-    async for item in items_collection.find():
-        items.append(item)
-    # damm this is the last lab
-    users = ["A1","B2","C3"]
-    async for user in users_collection.find():
-        users.append(user)
-    
-    item_count = len(items)
-    user_count = len(users)
+ # Old code: Fetching items and users from the database.
+    # However, the `users` list was initialized with dummy data `["A1", "B2", "C3"]`, which is incorrect.
+    # Additionally, the code did not handle potential database errors.
+    # items_collection = await get_items_collection()
+    # users_collection = await get_users_collection()
+    # items = []
+    # async for item in items_collection.find():
+    #     items.append(item)
+    # users = ["A1", "B2", "C3"]
+    # async for user in users_collection.find():
+    #     users.append(user)
+
+    # New code: Properly initialize the `users` list as empty and handle database errors using try-except blocks.
+    try:
+        items_collection = await get_items_collection()
+        users_collection = await get_users_collection()
+
+        items = []
+        async for item in items_collection.find():
+            items.append(item)
+
+        users = []
+        async for user in users_collection.find():
+            users.append(user)
+    except Exception as e:
+        return JSONResponse({"error": f"Database error: {str(e)}"}, status_code=500)
+
     
     item_name_lengths = np.array([len(item["names"]) for item in items]) if items else np.array([])
     user_username_lengths = np.array([len(user["usernames"]) for user in users]) if users else np.array([])
