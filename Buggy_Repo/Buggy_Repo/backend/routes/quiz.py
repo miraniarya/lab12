@@ -1,4 +1,4 @@
-#chandrani editing this file     
+#chandrani editing this file
 from fastapi import APIRouter, Request  # Added Request for handling JSON body in POST
 import random
 
@@ -56,6 +56,9 @@ async def submit_answer(request: Request):  # Use Request to parse incoming POST
     question_id = data.get("id")
     answer = data.get("answer")
     score = data.get("score", 0)
+
+    if not question_id or not answer:  # FIXED: Added validation for missing question_id or answer
+        return {"error": "Missing 'id' or 'answer' in the request"}  # Return error message for missing fields
 
     question = next((q for q in questions if q["id"] == question_id), None)
     if not question:
