@@ -1,4 +1,3 @@
-#chandrani editing this file
 from fastapi import APIRouter, Request  # Added Request for handling JSON body in POST
 import random
 
@@ -38,20 +37,29 @@ questions = [
     }
 ]
 
-game_state = {"high_score": 0}
-# god would hate me for not dockerizing this repo
+game_state = {"high_score": 0, "asked_questions": []}  # Added asked_questions to track asked questions
+
 @router.get("/question")
 async def get_question():
-    question = random.choice(questions)  # FIXED: return a random question instead of static
+    # Get a list of questions that haven't been asked yet
+    remaining_questions = [q for q in questions if q["id"] not in game_state["asked_questions"]]
+    
+    if not remaining_questions:
+        # If there are no remaining questions, return the error message
+        return {"error": "No more questions available."}  # All questions have been asked
+    
+    # Pick a random question from the remaining questions
+    question = random.choice(remaining_questions)
+    game_state["asked_questions"].append(question["id"])  # Mark the question as asked
+    
     return {
         "id": question["id"],
         "text": question["text"],
         "options": question["options"]
     }
 
-# FIXED: changed GET to POST and added request parsing
 @router.post("/answer")
-async def submit_answer(request: Request):  # Use Request to parse incoming POST body
+async def submit_answer(request: Request):
     data = await request.json()  # Properly extract JSON payload
     question_id = data.get("id")
     answer = data.get("answer")
